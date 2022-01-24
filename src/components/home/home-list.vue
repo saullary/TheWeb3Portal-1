@@ -52,9 +52,9 @@
                 :class="{
                   'line-4': !it.moreDesc,
                 }"
-                @click="$set(it, 'moreDesc', !it.moreDesc)"
                 style="min-height: 48px"
               >
+                <!-- @click="$set(it, 'moreDesc', !it.moreDesc)" -->
                 {{ it.desc }}
               </div>
               <div class="mt-2 link-wrap">
@@ -186,7 +186,9 @@ export default {
     },
     async getList() {
       try {
-        const { data } = await this.$http.get("/portal/list.json");
+        const { data } = await this.$http.get(
+          "https://web3portal.4everland.store/config.json"
+        );
         // console.log(data);
         this.list = data;
       } catch (error) {
