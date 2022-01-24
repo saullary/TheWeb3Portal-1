@@ -1,0 +1,55 @@
+.trans-200 {
+  transition: all ease 200ms;
+}
+.trans-300 {
+  transition: all ease 300ms;
+}
+
+.scale-9 {
+  transform: scale(.9);
+}
+.scale-8 {
+  transform: scale(.8);
+}
+
+.anim-shine {
+  animation: anim_shine 0.6s linear 3;
+}
+@keyframes anim_shine {
+  from {opacity: .5;}
+  to {opacity: 1;}
+}
+
+.anim-banner {
+  max-width: 720px;
+  height: 450px;
+  animation: anim_banner 2s infinite;
+  // background-image: url(/img/anim-banner/banner0000.png);
+  background-position-y: -200px;
+  background-size: cover;
+}
+@keyframes anim_banner {
+  0% { background-image: url(/img/anim-banner/banner0000.png); }
+  6% { background-image: url(/img/anim-banner/banner0001.png); }
+  12% { background-image: url(/img/anim-banner/banner0002.png); }
+  18% { background-image: url(/img/anim-banner/banner0004.png); }
+  24% { background-image: url(/img/anim-banner/banner0005.png); }
+  30% { background-image: url(/img/anim-banner/banner0006.png); }
+  36% { background-image: url(/img/anim-banner/banner0007.png); }
+  42% { background-image: url(/img/anim-banner/banner0008.png); }
+  48% { background-image: url(/img/anim-banner/banner0009.png); }
+  54% { background-image: url(/img/anim-banner/banner0010.png); }
+  60% { background-image: url(/img/anim-banner/banner0011.png); }
+  66% { background-image: url(/img/anim-banner/banner0012.png); }
+  72% { background-image: url(/img/anim-banner/banner0013.png); }
+  78% { background-image: url(/img/anim-banner/banner0014.png); }
+  84% { background-image: url(/img/anim-banner/banner0015.png); }
+  90% { background-image: url(/img/anim-banner/banner0016.png); }
+  100% { background-image: url(/img/anim-banner/banner0000.png); }
+}
+@media screen and (max-width: 600px) {
+  .anim-banner {
+    background-position-y: -60px;
+    height: 300px;
+  }
+}
