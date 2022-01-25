@@ -72,7 +72,7 @@
                       it.hosting
                         .replace("https://", "")
                         .replace(/\/$/, "")
-                        .cutStr(0, 30)
+                        .cutStr(0, 24)
                     }}</span>
                   </v-btn>
                 </div>
@@ -87,7 +87,7 @@
                   >
                     <v-icon size="14">mdi-github</v-icon>
                     <span class="ml-1">{{
-                      it.git.replace("https://github.com/", "").cutStr(0, 30)
+                      it.git.replace("https://github.com/", "").cutStr(0, 24)
                     }}</span>
                   </v-btn>
                 </div>
