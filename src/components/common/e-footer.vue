@@ -157,7 +157,7 @@ export default {
       links: [
         {
           icon: "mdi-github",
-          href: "https://github.com/TheWeb3Portal1",
+          href: "https://github.com/TheWeb3DAO/TheWeb3Portal",
           color: "#4b4b4b",
         },
         {
